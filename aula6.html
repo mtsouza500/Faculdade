@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parte 3 - Introdução ao CSS</title>
+        <!--CSS externo deve ser assim-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+        <!--Aqui CSS interno-->
+        <style>
+        .sessão-1 {
+            padding: 20px
+            border: solid 10px black;
+            margin: 20px;
+            margin-bottom: 10%;
+        }
+        .sessão-1 h2{
+            color:white
+            
+        }
+        .marrom{
+            color:brown;
+            font-size: 30px;
+        }
+        /*id*/
+         #exemplo {
+            color: orange;
+        }
+        .sessão-2{
+            text-align: right;
+
+        }
+        .sessão-2 p+p{
+            color:green;
+            border: solid 10px black;
+        }
+    
+        body {
+            background-color: blue
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div class="sessão-1">
+            <!--Incluir css inline no h1-->
+            <h1 style="color: red">Aqui será red</h1>
+            <h2 style="color: blue">Aqui será blue</h2>
+            <p style="color:purple">Aqui será purple</p>
+        </div>
+        <div class="sessão-2">
+            <h3 style="color:yellow">Aqui será yellow</h3>
+            <h4 class="marrom">Aqui será brown</h4>
+            <p style="color:black">Aqui black</p>
+            <p>Aqui green</p>
+        <div id = "class">
+            <p style="color:orange">Aqui orange</p>
+        </div>
+    </body>
+</html>
